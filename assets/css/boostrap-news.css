@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif; 
+}
+
+body {
+    color: #ddd;
+    background-color: #0e0e0e;
+}
+
+.news-header {
+    text-align: center;
+}
+
+.news-divider {
+    height: 2px;
+    width: 50%;
+    margin: 0 auto 20px;
+    background-image: linear-gradient(to right, transparent,orange, transparent);
+}
+
+.news-button-group {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.news-filter-button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.news-filter-button:hover {
+    background-color: darkorange;
+}
+
+.news-filter-button.active {
+    background-color: darkorange;
+}
+
+.news-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    width: 100%;
+    display: flex;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: #080808;
+}
+
+.news-image-link {
+    display: block;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.news-image-link:hover .news-image {
+    filter: brightness(70%);
+}
+
+.news-content {
+    padding: 30px;
+}
+
+.news-title {
+    margin: 10px 0;
+}
+
+.news-title a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.news-user {
+    display: flex;
+    align-items: center;
+}
+
+.news-user span {
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #ff0000; }
+    33% { color: #00ff00; }
+    66% { color: #0000ff; }
+    100% { color: #ff0000; }
+}
+
+.news-category {
+    font-weight: bold;
+}
+
+.news-category .guncelleme {
+    color: orange;
+}
+
+.news-category .etkinlik {
+    color: green;
+}
+
+.news-pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.news-page-button {
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    background-color: gold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.news-page-button:hover {
+    background-color: orange;
+}
+
+.news-page-button:disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%;
+    }
+}

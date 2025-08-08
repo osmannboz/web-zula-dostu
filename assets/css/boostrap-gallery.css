@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    background-color: #0e0e0e;
+}
+
+.galery-container {
+    padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    width: 50%;
+    height: 2px;
+    margin: 30px auto;
+    background-image: linear-gradient(to right, transparent, orange, transparent);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+}
+
+.gallery-item a {
+    display: block;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.gallery-item a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+.gallery-item a:hover::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay {
+    bottom: 0;
+    width: 100%;
+    color: #f1f1f1;
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 20px);
+    }
+}

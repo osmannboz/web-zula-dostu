@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+body {
+    line-height: 1.5;
+}
+
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+}
+
+.footer-main {
+    padding: 70px 0;
+    background-color: #080808;
+}
+
+.footer-container {
+    margin: auto;
+    max-width: 1170px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 35px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before {
+    content: "";
+    left: 0;
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: orange
+}
+
+.footer-col p {
+    color: #ddd;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+}
+
+.footer-col ul li a:hover {
+    color: #8d8d8d;
+}
+
+.language-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+
+.social-link a {
+    width: 40px;
+    height: 40px;
+    color: #ddd;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    transition: all 0.5s ease;
+}
+
+.social-link a:hover {
+    color: darkorange;
+}
+
+.icon-container {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-container li {
+    list-style: none;
+}
+
+.icon-container img {
+    height: auto;
+}
+
+.footer-corpmany {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.footer-corpmany .copyright-user-color {
+    color: orange;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
