@@ -7,23 +7,23 @@
 
 ---
 
-## 📖 Proje Hakkında
-**Zula Dostu** platformu için kullanıcı odaklı bir **haber sayfası** geliştirdim.  
-Projenin amacı, kullanıcıların güncel bilgilere kolay ve estetik bir arayüz üzerinden ulaşmasını sağlamaktır.  
+## 📖 About the Project
+I developed a **user-centric news page** for the Zula Dostu platform.  
+The project aims to provide users with up-to-date information through an aesthetically pleasing and intuitive interface.
 
 ---
 
-## ✨ Özellikler
-- 📱 **Responsive Tasarım** → Masaüstü, tablet ve mobil cihazlarda sorunsuz görünüm  
-- ⚡ **Performans Optimizasyonu** → Daha hızlı yüklenen sayfalar  
-- 🎨 **Kullanıcı Dostu Arayüz** → Modern ve sezgisel tasarım  
-- 🛡️ **Cloudflare Entegrasyonu** → IP gizleme & DDoS koruması  
-- 🔒 **Güvenlik + Hız** → Cloudflare ile ekstra güvenlik ve CDN desteği  
+## ✨ Features
+- 📱 **Responsive Design** → Seamless display on desktop, tablet, and mobile devices  
+- ⚡ **Performance Optimization** → Fast-loading pages  
+- 🎨 **User-Friendly Interface** → Modern and intuitive layout  
+- 🛡️ **Cloudflare Integration** → IP masking & DDoS protection  
+- 🔒 **Security & Speed** → Enhanced security and CDN benefits via Cloudflare  
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 - **Frontend:** HTML, CSS, JavaScript  
-- **Güvenlik & CDN:** Cloudflare  
+- **Security & CDN:** Cloudflare  
 
 ---
